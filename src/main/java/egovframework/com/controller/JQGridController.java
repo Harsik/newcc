@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import egovframework.com.cmm.CommonUtil;
+import egovframework.com.cmmn.CommonUtil;
 
 @Controller
 @RequestMapping(value="/jqgrid")

@@ -40,7 +40,7 @@ import com.fasterxml.jackson.core.JsonParseException;
 //import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import egovframework.com.cmm.CommonUtil;
+import egovframework.com.cmmn.CommonUtil;
 import egovframework.com.vo.SessionVo;
 import kr.co.twoksystem.config.Config;
 import kr.co.twoksystem.exception.AuthException;

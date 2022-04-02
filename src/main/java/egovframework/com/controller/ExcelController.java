@@ -19,8 +19,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import egovframework.com.cmm.CommonUtil;
+import egovframework.com.cmmn.CommonUtil;
 
 @Controller
 @RequestMapping(value="/excel")

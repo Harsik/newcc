@@ -26,6 +26,12 @@
 	    <spring.maven.artifact.version>5.3.6</spring.maven.artifact.version>
 		<org.egovframe.rte.version>4.0.0</org.egovframe.rte.version>
 		<jackson-mapper-asl.version>1.9.13</jackson-mapper-asl.version>
+		<json-lib-ext-spring.version>1.0.2</json-lib-ext-spring.version>
+		<commons-fileupload.version>1.2</commons-fileupload.version>
+		<httpclient.version>4.3.3</httpclient.version>
+		<jdom.version>2.0.5</jdom.version>
+		<poi.version>3.9</poi.version>
+		<icu4j.version>53.1</icu4j.version>
 	</properties>
 
 	<repositories>
@@ -158,11 +164,75 @@
         </dependency>
         -->
         
+        <!-- json -->
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>${jackson-mapper-asl.version}</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib-ext-spring</artifactId>
+			<version>${json-lib-ext-spring.version}</version>
+		</dependency>
+		
+		<!-- apache -->	
+		<!-- apache httpcomponents -->	
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>${httpclient.version}</version>
+		</dependency>
+		
+		<!-- apache commons -->		
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>${commons-fileupload.version}</version>
+		</dependency>
+		
+		<!-- apache poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${poi.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${poi.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>${poi.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jdom</groupId>
+			<artifactId>jdom2</artifactId>
+			<version>${jdom.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.ibm.icu</groupId>
+			<artifactId>icu4j</artifactId>
+			<version>${icu4j.version}</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
