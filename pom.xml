@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-	<groupId>tiflis</groupId>
-	<artifactId>newcc</artifactId>
-	<packaging>war</packaging>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>egov</groupId>
+	<artifactId>boot-example</artifactId>
+	<packaging>jar</packaging>
 	<version>1.0.0</version>
-	<name>newcc</name>
+	<name>boot-example</name>
 	<url>http://www.egovframe.go.kr</url>
 
 	<licenses>
@@ -15,10 +15,16 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
-    
+
+	<parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.5</version>
+    </parent>
+
 	<properties>
 	    <spring.maven.artifact.version>5.3.6</spring.maven.artifact.version>
-        <org.egovframe.rte.version>4.0.0</org.egovframe.rte.version>
+		<org.egovframe.rte.version>4.0.0</org.egovframe.rte.version>
 	</properties>
 
 	<repositories>
@@ -45,6 +51,19 @@
     </repositories>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+
 		<!-- 표준프레임워크 실행환경 -->
         <dependency>
 		    <groupId>org.egovframe.rte</groupId>
@@ -76,8 +95,8 @@
         <dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<scope>provided</scope>
 			<version>3.1.0</version>
+			<scope>provided</scope>
 		</dependency>
 
         <dependency>
@@ -93,18 +112,18 @@
         </dependency>
 
 		<dependency>
-	        <groupId>org.antlr</groupId>
+            <groupId>org.antlr</groupId>
 	        <artifactId>antlr</artifactId>
 	        <version>3.5</version>
-   		</dependency>
+        </dependency>
 
 		<dependency>
 			<groupId>org.hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
 			<version>2.5.0</version>
 		</dependency>
-        
-        <!-- mysql이나 oracle DB 사용시 아래 설정 추가  
+
+        <!-- mysql이나 oracle DB 사용시 아래 설정 추가
         <dependency>
             <groupId>com.googlecode.log4jdbc</groupId>
             <artifactId>log4jdbc</artifactId>
@@ -116,13 +135,13 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        
+
         <dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-dbcp2</artifactId>
-			<version>2.4.0</version>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-dbcp2</artifactId>
+		    <version>2.4.0</version>
 		</dependency>
-        
+
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -158,14 +177,16 @@
 	                </configuration>
 	            </plugin>
                 <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <configuration>
-                        <source>1.8</source>
-                        <target>1.8</target>
-                        <encoding>UTF-8</encoding>
-                    </configuration>
-                </plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.1</version>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+						<encoding>UTF-8</encoding>
+						<maxmem>1024m</maxmem>
+					</configuration>
+				</plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>hibernate3-maven-plugin</artifactId>
@@ -237,7 +258,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.1.2</version>
                 <reportSets>
                     <reportSet>
                         <id>sunlink</id>
