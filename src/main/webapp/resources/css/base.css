@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import url( "http://fonts.googleapis.com/earlyaccess/notosanskr.css" );
+@font-face{
+font-family:'NanumBarunGothicUltraLight';font-style:normal;src:url(../font/NanumBarunGothicUltraLight.eot);src:url(../font/NanumBarunGothicUltraLight.eot?#iefix) format('embedded-opentype'),url(../font/NanumBarunGothicUltraLight.woff) format('woff'),url(../font/NanumBarunGothicUltraLight.ttf) format('truetype')}
+@font-face{
+font-family:'NanumBarunGothic';font-style:normal;src:url(../font/NanumBarunGothic.eot);src:url(../font/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),url(../font/NanumBarunGothic.woff) format('woff'),url(../font/NanumBarunGothic.ttf) format('truetype')}
+@font-face{
+font-family:'NanumBarunGothicBold';font-style:normal;src:url(../font/NanumBarunGothicBold.eot);src:url(../font/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),url(../font/NanumBarunGothicBold.woff) format('woff'),url(../font/NanumBarunGothicBold.ttf) format('truetype')}
+@font-face {
+font-family:'NanumGothic'; src:url('../font/NanumGothic.eot');src:url('../font/NanumGothic.woff') format('woff');}
+
+*{margin:0;padding:0;list-style-type:none;}
+html{height:100%;}
+mark{background-color:transparent;}
+body{width:100%;min-height:100%;margin:0;padding:0;}
+body{font-size:14px;font-family:'NanumGothic','NanumBarunGothic', 'noto sans kr', 'Noto Serif', 'serif', 'Myriad Pro','Tahoma','Verdana','Dotum','Gulim';line-height: 1.4;color: #4d4d4d;}
+h1,h2,h3,h4,h5,h6{font-size:1em; font-weight:normal;}
+h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ul,ol,li,form,fieldset,blockquote,address,table,thead,tbody,tfoot,tr,td,caption,legend,label{margin:0;padding:0}
+a:link {color: #4d4d4d;text-decoration:none;}
+a:visited {color: #4d4d4d;text-decoration:none;}
+a:hover, a:active, a:focus {text-decoration:none;}
+ul,ol{list-style:none}
+em,var{font-style:normal}
+img,fieldset{border:0 none}
+div,p,span,li,table td{word-break:keep-all}
+hr{visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:0;height:0;padding:0;font-size:0;line-height:0}	
+caption,legend{visibility:hidden;top:0;left:0;width:0;height:0;padding:0;font-size:0;line-height:0}
+textarea{padding:9px;padding-right:0;border-top:solid 1px #afafaf;border-right:solid 1px #ddd;border-bottom:solid 1px #ddd;border-left:solid 1px #c3c3c3;font-size:14px;color:#666;resize:none}
+.skip, .tableskip{visibility:hidden;overflow:hidden;width:0;height:0;margin:0;padding:0;font-size:0;line-height:0}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,nav,menu,nav,section,summary{display:block}
+*, *:before, *:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+table{border-collapse:collapse}
+select, input{font-family:'NanumBarunGothic', 'NanumGothic','noto sans kr', 'Noto Serif', 'serif', 'Myriad Pro','Tahoma','Verdana','Dotum','Gulim'; font-size:14px;vertical-align:top;}
+iframe{border:0;}
+sup {vertical-align: top;}
+
+ul li{list-style:none;}
+.hide{display:none;}
+img.mid {vertical-align: middle;}
+.hidden {visibility:hidden;margin:0;padding:0;width:0;height:0;background:none;font-size:0;line-height:0;display:none;}
+
+hr.blank_line {position: static;clear: both;}
+
+/* hidden contents */
+.skip,.hidden{position:absolute; width:1px; height:1px; font-size:0; line-height:0; overflow:hidden; z-index:-1}
+
+/*정렬*/
+.left{text-align:left !important;}
+.center{text-align:center !important;}
+.right{text-align:right !important;}
+
+/*세로정렬*/
+.v_top{vertical-align:top ! important;}
+.v_middle{vertical-align:middle ! important;}
+.v_bottom{vertical-align:bottom ! important;}
+
+.c01 {color: #4ca508;}
+.c02 {color: #ff7800;}
+.c03 {color: #d71921;}
+a.link {color: #0000ff;}
+
+h3, h4{font-weight:bold;}
+h5 {font-weight: bold;color: #333;margin: 5px 0;}
+input[type=text] {position: relative;height: 30px;border: 1px solid #b7b7b7;border-right-color: #e1e1e1;border-bottom-color: #e1e1e1;background: #fff;font-size: 12px;font-family: 'NanumBarunGothic', 'NanumGothic','noto sans kr', 'Noto Serif', 'serif', 'Myriad Pro','Tahoma','Verdana','Dotum','Gulim';line-height: 30px;padding: 0 3px 0 6px;margin: 0;border-radius: 0;}
+input.mid{width:200px;}
+input.long{width:490px;}
+input[type=radio] {margin-left:5px;} 
+input{vertical-align: middle;}
+label{display:none;}
+
+select{}
+h1, h2 {font-weight: 700;}
+
+.buttons {text-align: center;}
+
+.clear:after{content:'';display: block;clear:both;}
+
+ 

@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import "base.css";
+
+
+/* 공통_스킵메뉴 */
+#skip{position:absolute; display:block; width:100%; left:0; text-align:center; }
+#skip a{position:absolute; display:block; width:100%; left:0; text-align:center; top:-10000px; z-index:500; font-size:12px;}
+#skip a:hover, #skip a:focus, #skip a:active{position: absolute; top: 0; padding: 10px 0; font-weight:600; color:#fff; background:#2f3e56; z-index:500;}
+
+
+body {background: url(../images/bg.png) no-repeat;background-size: cover;}
+
+/*header*/
+
+#header {position: relative;font-family: 'NanumBarunGothicBold';padding: 1em 0;}
+/* #header .page-title {text-align: center;font-size: 6em;width: 8.5em;margin: 0 auto;background: url('../images/tit_bg.png') repeat-x;background-size: 100% 100%;line-height: 2.0;color: #004794;border: 1px solid #7db5de;border-radius: 100px;} */
+#header .page-title {text-align: center;font-size: 5.3em;width: 8.5em;margin: 0 auto;background: url('../images/tit_bg.png') repeat-x;background-size: 100% 100%;line-height: 2.0;color: #004794;border: 1px solid #7db5de;border-radius: 100px;}
+#header .date{position: absolute;right: 0px;top: 2em;background: url('../images/date_bg.png') no-repeat;background-size: cover;color: #fff;font-size: 2.7em;padding: 0.3em 2em;}
+
+/* .middle{min-height: 781px;padding: 1em 2em;} */
+.middle{min-height: 781px;padding: 0em 1em;}
+
+/*page1*/
+.middle:after{content: ''; display: block;clear:both;}
+.middle .left-section {float: left;padding: 1.7em 2em 0;width: 49.3%;background: url('../images/half_bg.png') no-repeat;background-size: cover;}
+.middle .right-section {float: right;padding: 2em 2em 0;width: 49.3%;background: url('../images/half_bg.png') no-repeat;background-size: cover;}
+ 
+
+.middle .top-value {position: relative;font-weight: bolder;}
+/* .middle .top-value .stit {color: #00244b;font-size: 4.5em;background: url('../images/top_bg.png') repeat-x;background-size: 100% 100%;width: 60%;position: relative;z-index: 2;display: block;text-align: center;border: 6px solid #4c9ce0;border-radius: 1em;padding: 12px;} */
+.middle .top-value .stit {color: #00244b;font-size: 5.8em;background: url('../images/top_bg.png') repeat-x;background-size: 100% 100%;width: 60%;position: relative;z-index: 2;display: block;text-align: center;border: 6px solid #4c9ce0;border-radius: 1em;padding: 4px;}
+/* .middle .top-value .t-value {display: block;background: url('../images/top_value.png') no-repeat;background-size: cover;background-position: right;font-size: 3.5em;color: #bf00a6;font-weight: bold;position: absolute;width: 50%;height: 130px;right: 0;top: 0;text-align: right;padding: 30px 75px 0;} */
+.middle .top-value .t-value {display: block;background: url('../images/top_value.png') no-repeat;background-size: cover;background-position: right;font-size: 5.5em;color: #bf00a6;font-weight: bold;position: absolute;width: 50%;height: 130px;right: 0;top: 0;text-align: right;padding: 15px 75px 0;}
+
+ul.value {padding: 10px 20px;display: inline-block;width: 100%;font-weight: bold;}
+/* ul.value>li {background: url(../images/value_bg.png) no-repeat;background-size: 100% 100%;background-position: center;margin: 9px 0;border: 6px solid #4c9ce0;border-radius: 1em;padding: 4px 20px;} */
+ul.value>li {background: url(../images/value_bg.png) no-repeat;background-size: 258% 370%;background-position: center;margin: 9px 0;border: 6px solid #4c9ce0;border-radius: 1em;padding: 2px 4px 2px 20px;}
+/* ul.value>li>.item {font-size: 3.6em;color: #00244b;display: inline-block;width: 60%;} */
+ul.value>li>.item {font-size: 5em;color: #00244b;display: inline-block;width: 67%;font-family:"NanumBarunGothicBold";}
+ul.value>li>.value {display: inline-block;width: 32%;text-align: right;font-size: 2.5em;color: #0067bf;}
+/* ul.value>li>.value {display: inline-block;width: 34%;text-align: right;font-size: 2.5em;color: #0067bf;} */
+ul.value>li>.value span.num{color:#008aff;font-size: 2.1em;font-weight: bolder;} 
+/* ul.value>li>.value span.num{color:#008aff;font-size: 1.5em;} */
+
+
+#footer .title {float: left;font-size: 2em;color: #000;padding: 0 0 0 30px;}
+#footer .logo {float: right;padding: 0 30px 0 0;}
+#footer {height: 50px;position: fixed;width: 100%;bottom: 0;}
+
+
+/*page2*/
+/* .page2 .middle .left-section {float: left;padding: 2em 2em 0;width: 49.3%;background: url('../images/half2_bg.png') no-repeat;background-size: cover;}
+.page2 .middle .right-section {float: right;padding: 2em 2em 0;width: 49.3%;background: url('../images/half2_bg.png') no-repeat;background-size: cover;}
+ */
+.page2 .middle .left-section {float: left;padding: 1em 2em 0;width: 49.3%;background: url('../images/half2_bg.png') no-repeat;background-size: cover;}
+.page2 .middle .right-section {float: right;padding: 1em 2em 0;width: 49.3%;background: url('../images/half2_bg.png') no-repeat;background-size: cover;}
+.page2 .middle .all-section {padding: 0em 2em;background: url('../images/all_bg.png') no-repeat;background-size: 99%;}
+
+/* .g-title {color: #00244b;font-size: 4em;text-align: center;font-weight: bold;padding: 0 0 30px 0;} */
+.g-title {color: #00244b;font-size: 4em;text-align: center;font-weight: bold;padding: 0 0 0 0;}
+.graph {text-align: center;padding: 0 0 30px 0;}
+.table table {border-collapse: separate;margin: 0 auto;}
+/* .table table th, .table table td {padding: 10px;font-size: 2em;width: 145px;} */
+.table table th, .table table td {padding: 10px;font-size: 3em;width: 180px; font-family:'NanumBarunGothicBold' !important;}
+.table table th {background: #0092ff;color: #fff;}
+.table table td {background: #dce7f0;color: #00244b;text-align: center;}
+
+
+/*page3*/
+/* .page3 .middle .all-section {padding: 5em 2em;background: url('../images/all_bg.png') no-repeat;background-size: cover;} */
+.page3 .middle .all-section {padding: 0em 2em;background: url('../images/all_bg.png') no-repeat;background-size: 1892px;}
+
+
+

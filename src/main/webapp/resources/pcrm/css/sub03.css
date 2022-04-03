@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+.process_0305 li .con .title {font-size: 13.4px;}
+
+.process_06070103 li .con .txt {min-height: 78px;}
+.process_06070103 li .con .txt p {padding-top: 12px; box-sizing: border-box;}
+.process_06070103 .list03 .con .txt p, .process_06070103 .list05 .con .txt p {padding-top: 20px;}
+.process_06070103 .list01 .con .txt p, .process_06070103 .list04 .con .txt p {padding-top: 0px;}
+
+/*지도로 보는 대기질*/
+/*대기질상태별 색상*/
+/*좋음 .status01*/
+/*보통 .status02*/
+/*나쁨 .status03*/
+/*아주나쁨 .status04*/
+.air_wrap{padding:0 1%}
+.air_wrap .info_wrap{float:left;width: 42%;margin-right: 1%;}
+.source{margin-top:10px;content:'';clear:both;overflow:hidden;text-align: right;}
+.source p {display: inline;color:#7a7a7a;font-size:12px;text-decoration: underline;}
+.source span{color:#155f93;background: #f2f2f2;padding: 5px 15px;border-radius: 13px;font-size: 12px;display: inline;box-sizing: border-box;margin: 0 10px;}
+.air_wrap .air_map{float:left;background:url(/pyeongtaek/images/sub03/map_bg.jpg) no-repeat 100%;width: 56.5%;height: 435px;box-shadow: 1px 1px 7px 0px #ccc;}
+.air_wrap .air_map .map_spot{position:relative;background: url(/pyeongtaek/images/sub03/map.png) no-repeat;background-position:center;width:100%;height:100%}
+.air_wrap .air_map .map_tit{position:absolute; top:40px; left:40px; width:301px; height:181px;}
+.air_wrap .air_map ul li a {display:block; width:100%; height:100%;}
+
+.air_wrap .air_map ul li span{margin-top:14px; font-size:13px; font-weight:bold; display:block;}
+.air_wrap .air_map ul li.status{position:absolute}
+.air_wrap .air_map ul li.pt.status00{bottom:21%;left:14%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark00.png) no-repeat;width:52px;height:77px}
+.air_wrap .air_map ul li.pt.status01{bottom:21%;left:14%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark01.png) no-repeat;width:52px;height:77px}
+.air_wrap .air_map ul li.pt.status02{bottom:21%;left:14%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark02.png) no-repeat;width:52px;height:77px}
+.air_wrap .air_map ul li.pt.status03{bottom: 21%;left: 14%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark03.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li.pt.status04{bottom:21%;left:14%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark04.png) no-repeat;width:52px;height:77px}
+.air_wrap .air_map ul li.aj.status00{left: 37%;bottom: 35%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark00.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li.aj.status01{left: 37%;bottom: 35%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark01.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li.aj.status02{left: 37%;bottom: 35%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark02.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li.aj.status03{left: 37%;bottom: 35%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark03.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li.aj.status04{left: 37%;bottom: 35%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark04.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li.bj.status00{right:9%;bottom: 40%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark00.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li.bj.status01{right:9%;bottom: 40%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark01.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li.bj.status02{right:9%;bottom: 40%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark02.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li.bj.status03{right:9%;bottom: 40%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark03.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li.bj.status04{right:9%;bottom: 40%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark04.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li.sb.status00{right:16%;bottom: 60%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark00.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li.sb.status01{right:16%;bottom: 60%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark01.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li.sb.status02{right:16%;bottom: 60%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark02.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li.sb.status03{right:16%;bottom: 60%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark03.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li.sb.status04{right:16%;bottom: 60%;text-align: center;position:absolute;background: url(/pyeongtaek/images/sub03/mark04.png) no-repeat;width:52px;height:77px;}
+.air_wrap .air_map ul li a {display:block;}
+.air_wrap .air_map ul li a em {display:block; width:0; height:0; font-size:0;}
+
+.air_wrap .todayInfo{width: 100%;background: url(/pyeongtaek/images/sub03/info_bg.png) no-repeat;height:224px;color:#fff;box-shadow: 1px 1px 7px 0px #ccc;background-size: cover;}
+.air_wrap .air_info ul{margin:0 auto; width:72%;}
+.air_wrap .air_info ul li {clear:both}
+.air_wrap .air_info ul li span {text-indent:-99999px;}
+.air_wrap .air_info ul li span.color{float:left;width:30px;height:30px;background:url(/pyeongtaek/images/sub03/colortag.png) no-repeat;display: inline-block;}
+.air_wrap .air_info ul li span.color.status00{background-position: -53px -138px;}
+.air_wrap .air_info ul li span.color.status01{background-position: -18px -14px;}
+.air_wrap .air_info ul li span.color.status02{background-position: -89px -14px;}
+.air_wrap .air_info ul li span.color.status03{background-position: -18px -88px;}
+.air_wrap .air_info ul li span.color.status04{background-position: -89px -88px;}
+.air_wrap .air_info ul li span.num{font-size:17px;font-weight: bold;font-style: italic;}
+.air_wrap .air_info ul li span.num.status01{color:#86c3ff}
+.air_wrap .air_info ul li span.num.status02{color:#68d945}
+.air_wrap .air_info ul li span.num.status03{color:#ffb85f}
+.air_wrap .air_info ul li span.num.status04{color:#f2792a}
+.air_wrap .todayInfo p.today{font-size:20px;text-align: center;padding-top: 25px;}
+.air_wrap .todayInfo p.today span.date{font-size:25px;font-weight: bold;}
+.air_wrap .air_info p.info{font-size:20px;text-align: center;}
+.air_wrap .air_info p.info:after{content:'';display:block;width:70%;border-top:1px solid rgba(255, 255, 255, 0.3);margin:13px auto}
+.air_wrap .air_info p.info span.spot{position:relative;font-size:27px;font-weight: bold;}
+.air_wrap .air_info p.info span.spot:before{position:relative;display:inline-block;content:'';clear:both;background:url(spot_ico.png) no-repeat;width: 22px;height:32px;top: 7px;left: 1px;background-position: -2px;}
+.air_wrap .air_info p.note{padding: 0 15px;float: right;}
+.air_wrap .air_info p.note span.notetxt{float: left;}
+.air_wrap .air_info p.note span.color{float:left;width:30px;height:30px;background:url(/pyeongtaek/images/sub03/colortag.png) no-repeat;display: inline-block;}
+.air_wrap .air_info p.note span.color.status00{background-position: -50px -137px;}
+
+.air_wrap .air_chart{width:100%;text-align: center;margin-top: 14px;}
+.air_wrap .air_chart .charttbl{border-collapse: separate;border-spacing: 0 8px;} 
+.air_wrap .air_chart thead tr th{padding: 6px 0;}
+.air_wrap .air_chart tbody tr{margin-top:5px}
+.air_wrap .air_chart .charttbl tbody td{border-bottom:1px dashed #eaeaea;font-size: 13px;}
+.air_wrap .air_chart .charttbl tbody tr:last-child td{border-bottom:0}
+.air_wrap .air_chart .charttbl tbody tr th{border-radius: 15px;color:#fff;padding: 4px;}
+.air_wrap .air_chart .charttbl tbody tr:first-child th{/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#79bcff+0,4097ee+100 */
+background: #79bcff; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #79bcff 0%, #4097ee 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #79bcff 0%,#4097ee 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #79bcff 0%,#4097ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79bcff', endColorstr='#4097ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+.air_wrap .air_chart .charttbl tbody tr:nth-child(2) th{/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#80e461+0,46ca1d+100 */
+background: #80e461; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #80e461 0%, #46ca1d 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #80e461 0%,#46ca1d 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #80e461 0%,#46ca1d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80e461', endColorstr='#46ca1d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+.air_wrap .air_chart .charttbl tbody tr:nth-child(3) th{/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffd236+0,ffab74+100 */
+background: #ffd236; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #ffd236 0%, #ffab74 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #ffd236 0%,#ffab74 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #ffd236 0%,#ffab74 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd236', endColorstr='#ffab74',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+.air_wrap .air_chart .charttbl tbody tr:nth-child(4) th{/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fd8e44+0,ed6f1c+100 */
+background: #fd8e44; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #fd8e44 0%, #ed6f1c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #fd8e44 0%,#ed6f1c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #fd8e44 0%,#ed6f1c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd8e44', endColorstr='#ed6f1c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+.air_wrap .air_chart .charttbl thead{background: #f7f7f7;font-size:14px;font-weight: bold;color:#066691;text-align: center;padding:10px 0;}
+.air_wrap:after{clear:both;content:'';display:block}
+.how_wrap{padding:0 1%;margin-top:20px}
+.how_wrap:after{clear:both;content:'';display:block}
+.how_wrap .how_txt{width:100%;padding-left:10px;letter-spacing: -1px;color:#6b6b6b;font-size: 18px;background: #b6e6ed;border-radius:15px 15px 15px 0;padding: 12px 0 12px 30px;margin:0 auto;box-sizing: border-box;}
+.how_wrap div div{width:48%;float:left;margin-top:12px;}
+.how_wrap div p{padding: 7px 0;color:#155f93;background:#f7f7f7;font-size:16px;font-weight: bold;text-align: center;}
+.how_wrap div.finedust{margin-right:4%}
+.how_wrap div ul {margin-top:10px}
+.how_wrap div ul li {float:left;text-align: center;}
+.how_wrap div ul li span.howtxt{margin-top:10px;font-size:13px}
+.how_wrap div ul li span.dust,
+.how_wrap div ul li span.ozone {width:95px;height:96px;display:block;}
+/*미세먼지, 초미세먼지 행동요령*/
+/*미세먼지 마스크 불필요 .how01*/
+/*실외활동 지장없음 .how02*/
+/*실외수업 지장없음 .how03*/
+/*자연환기 권장 .how04*/
+/*미세먼지 마스크 필요 .how_danger01*/
+/*실외활동 자제 .how_warn02*/
+/*실외수업 자제 .how_warn03*/
+/*기계식 환기 권장 .how_warn04*/
+/*미세먼지 마스크 필요 .how_danger01*/
+/*실외활동 자제 .how_danger02*/
+/*실외수업 자제 .how_danger3*/
+/*기계식 환기 필요 .how_danger04*/
+
+/*오존*/
+/*실외활동 지장없음 .how02*/
+/*실외수업 지장없음 .how03*/
+/*차량운행 지장없음 .how05*/
+/*노천소각 지장없음 .how06*/
+/*실외활동 자제권고 .how_warn02*/
+/*단축수업 검토 .how_warn03*/
+/*차량운행 가급적 자제 .how_warn05*/
+/*노천소각 제한 .how_warn06*/
+/*실외활동 제한 .how_danger02*/
+/*휴교검토 .how_danger03*/
+/*차량운행 자제 .how_danger05*/
+/*노천소각 금지 .how_danger06*/
+.how_wrap div ul li span.how_danger01{background: url(/pyeongtaek/images/sub03/howico_danger01.png) no-repeat;}
+.how_wrap div ul li span.how_danger02{background: url(/pyeongtaek/images/sub03/howico_danger02.png) no-repeat;}
+.how_wrap div ul li span.how_danger03{background: url(/pyeongtaek/images/sub03/howico_danger03.png) no-repeat;}
+.how_wrap div ul li span.how_danger04{background: url(/pyeongtaek/images/sub03/howico_danger04.png) no-repeat;}
+.how_wrap div ul li span.how_danger05{background: url(/pyeongtaek/images/sub03/howico_danger05.png) no-repeat;}
+.how_wrap div ul li span.how_danger06{background: url(/pyeongtaek/images/sub03/howico_danger06.png) no-repeat;}
+.how_wrap div ul li span.how_warn01{background: url(/pyeongtaek/images/sub03/howico_danger01.png) no-repeat;}
+.how_wrap div ul li span.how_warn02{background: url(/pyeongtaek/images/sub03/howico_warn02.png) no-repeat;}
+.how_wrap div ul li span.how_warn03{background: url(/pyeongtaek/images/sub03/howico_warn03.png) no-repeat;}
+.how_wrap div ul li span.how_warn04{background: url(/pyeongtaek/images/sub03/howico_warn04.png) no-repeat;}
+.how_wrap div ul li span.how_warn05{background: url(/pyeongtaek/images/sub03/howico_warn05.png) no-repeat;}
+.how_wrap div ul li span.how_warn06{background: url(/pyeongtaek/images/sub03/howico_warn06.png) no-repeat;}
+.how_wrap div ul li span.how01{background: url(/pyeongtaek/images/sub03/howico01.png) no-repeat;}
+.how_wrap div ul li span.how02{background: url(/pyeongtaek/images/sub03/howico02.png) no-repeat;}
+.how_wrap div ul li span.how03{background: url(/pyeongtaek/images/sub03/howico03.png) no-repeat;}
+.how_wrap div ul li span.how04{background: url(/pyeongtaek/images/sub03/howico04.png) no-repeat;}
+.how_wrap div ul li span.how05{background: url(/pyeongtaek/images/sub03/howico05.png) no-repeat;}
+.how_wrap div ul li span.how06{background: url(/pyeongtaek/images/sub03/howico06.png) no-repeat;}
+
+@media screen and (max-width:910px){
+	.air_wrap{padding:0}
+	.air_wrap .info_wrap{width:100%;float:none}
+	.air_wrap .info_wrap:after{content:'';clear:both;display:block}
+	.air_wrap .todayInfo{width:42%;margin-right:1%;float:left}
+	.air_wrap .air_chart{width:56%;float:left;margin-top:0}
+	.air_wrap .air_map{width:100%;float:none;margin-top: 15px;background-size:cover;}
+	.air_wrap .air_info ul{width:66%}
+	.how_wrap div div{margin-right: 0;}
+	.how_wrap div ul li{width:50%}
+	.how_wrap div ul li span.dust, .how_wrap div ul li span.ozone{margin:0 auto}
+	.air_wrap .air_map .map_spot{background-size:100%;width:60%;margin:0 auto}
+	
+}
+@media screen and (max-width:767px){
+		.source p{display:block}
+}
+@media screen and (max-width:690px){
+	.air_wrap .todayInfo{width:100%;margin-right: 0;}
+	.air_wrap .air_chart{width:100%;}
+.air_wrap .air_map .map_spot{background-size:100%;width:60%;margin:0 auto}
+}
+
+@media screen and (max-width:550px){
+	.air_wrap .air_map .map_spot{width:100%}
+	.how_wrap .how_txt{padding:15px;text-align: center;}
+	.how_wrap .how_txt strong{display:block}
+}
+@media screen and (max-width:425px){
+.how_wrap div div{width:100%}
+	.how_wrap div ul li{width:25%}
+	.how_wrap div ul li span.dust, .how_wrap div ul li span.ozone{width:100%;background-size: 100%;}
+}

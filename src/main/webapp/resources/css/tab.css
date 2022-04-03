@@ -1,0 +1,81 @@
+#tabs1,#tabs2,#tabs3,#tabs7 {
+	list-style: none;
+	overflow: auto;
+	margin: 0px;
+}
+
+#tabs1 li,#tabs2 li,#tabs3 li,#tabs7 li {
+	float: left;
+	padding-top: 3px;
+	padding-right: 8px;
+	padding-bottom: 3px;
+	padding-left: 8px;
+	cursor: pointer;
+	display: inline;
+	font-size: 10pt;
+	color: #fff;
+	font-weight: bold;
+	background-color: #faebd7;
+	background-image: url("../images/tab_bg2.png");
+	border: 1px solid #eee;
+}
+
+#tabs1 li.active, #tabs2 li.active, #tabs3 li.active, #tabs7 li.active {
+	font-size: 10pt;
+	color: #fff;
+	font-weight: bold;
+	background-color: #add8e6;
+	font-weight: bold;
+	border: 1px solid #808080;
+	background-image: url("../images/tab_bg1.png");
+}
+/* 
+#tabs2 li.active {
+	color: #131;
+	background-color: #add8e6;
+	font-weight: bold;
+	border: 1px solid #808080;
+}
+ */
+#ctnt1, #ctnt2, #ctnt3, #ctnt7 {
+	overflow:visible;
+}
+
+#ctnt1>div, #ctnt2>div, #ctnt3>div, #ctnt7>div {
+	display: none;
+	padding: 10px;
+	border: 1px solid #aaa;
+	height: 100%;
+}
+/* 
+#ctnt2>div {
+	display: none;
+	padding: 10px;
+	border: 1px solid #aaa;
+	height: 100%;
+}
+ */ 
+#ctnt1>#ctnt2, #ctnt1>#ctnt3 {
+	height: 30em;
+}
+
+#ctnt1>div.active,#ctnt2>div.active,#ctnt3>div.active {
+	display: block;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 72em;
+	text-align: left;
+}
+
+/* table th {
+	background-color: #eee;
+	font-weight: normal;
+} */
+
+.grid_all {
+	height: 100%;
+}

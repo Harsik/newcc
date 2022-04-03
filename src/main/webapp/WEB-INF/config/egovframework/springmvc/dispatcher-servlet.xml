@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:mvc="http://www.springframework.org/schema/mvc"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+			http://www.springframework.org/schema/context
+			http://www.springframework.org/schema/context/spring-context-4.0.xsd
+			http://www.springframework.org/schema/mvc
+			http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
+
+	<context:component-scan base-package="egovframework">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+    </context:component-scan>
+    
+    <mvc:annotation-driven />
+	<mvc:resources location="/resources/" mapping="/resources/**" />
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**/*.do" />
+			<bean class="kr.co.twoksystem.interceptor.GlobeeInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+	<context:component-scan base-package="kr.co.twoksystem" />
+	
+	<bean id="beanNameViewResolver"
+		class="org.springframework.web.servlet.view.BeanNameViewResolver"
+		p:order="0" />
+		
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+		p:viewClass="org.springframework.web.servlet.view.JstlView" p:prefix="/WEB-INF/jsp/"
+		p:suffix=".jsp" />
+		
+	<bean id="ExcelDownloadView" class="kr.co.twoksystem.view.ExcelDownloadView"/>
+	<bean id="JacksonJsonView" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
+ 		<property name="prefixJson" value="false" />
+		<property name="contentType" value="application/json; charset=UTF-8" />
+	</bean>
+
+<!-- before -->
+<!--	
+	<bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView" >
+		<property name="extractValueFromSingleKeyModel" value="true"/>
+	</bean>
+-->
+
+<!-- after -->
+<!--
+    <bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
+        <property name="contentType" value="text/html;charset=UTF-8"/>
+    </bean>
+-->
+</beans>
