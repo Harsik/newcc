@@ -7,6 +7,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.Resource;
+
 import kr.co.twoksystem.mapper.IGlobeeMapper;
 import kr.co.twoksystem.security.GlobeeSecurity;
 import kr.co.twoksystem.service.IGlobeeService;
@@ -23,6 +25,7 @@ import org.egovframe.rte.fdl.cmmn.EgovAbstractServiceImpl;
 public class CommonService extends EgovAbstractServiceImpl implements IGlobeeService {
 
 	@Autowired
+//	@Resource(name="globeeMapper")
 	private IGlobeeMapper globeeMapper;
 
 //	public void setGlobeeMapper(IGlobeeMapper globeeMapper) {

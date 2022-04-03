@@ -9,7 +9,7 @@
 
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
         <property name="webBindingInitializer">
-            <bean class="egovframework.example.cmmn.web.EgovBindingInitializer"/>
+            <bean class="egovframework.com.cmmn.web.EgovBindingInitializer"/>
         </property>
     </bean>
 
@@ -30,7 +30,7 @@
 	    p:prefix="/WEB-INF/jsp/egovframework/example/" p:suffix=".jsp"/>
 
     <!-- For Pagination Tag -->
-    <bean id="imageRenderer" class="egovframework.example.cmmn.web.EgovImgPaginationRenderer"/>
+    <bean id="imageRenderer" class="egovframework.com.cmmn.web.EgovImgPaginationRenderer"/>
 
     <bean id="paginationManager" class="org.egovframe.rte.ptl.mvc.tags.ui.pagination.DefaultPaginationManager">
         <property name="rendererType">
@@ -41,6 +41,11 @@
     </bean>
 	<!-- /For Pagination Tag -->
 
+	<!-- <bean id="ExcelDownloadView" class="kr.co.twoksystem.view.ExcelDownloadView"/> -->
+	<bean id="JacksonJsonView" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
+ 		<property name="prefixJson" value="false" />
+		<property name="contentType" value="application/json; charset=UTF-8" />
+	</bean>
     <mvc:view-controller path="/cmmn/validator.do" view-name="cmmn/validator"/>
 
 </beans>

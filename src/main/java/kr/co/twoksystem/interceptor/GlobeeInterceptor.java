@@ -7,14 +7,16 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.web.context.request.WebRequestInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.ModelAndViewDefiningException;
-import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+import org.springframework.web.servlet.handler.WebRequestHandlerInterceptorAdapter;
+//import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import org.springframework.web.util.UrlPathHelper;
 
 import egovframework.com.vo.SessionVo;
 
-public class GlobeeInterceptor extends HandlerInterceptorAdapter
+public class GlobeeInterceptor extends WebRequestHandlerInterceptorAdapter
 {
 	/*
 	 
@@ -195,6 +197,11 @@ public class GlobeeInterceptor extends HandlerInterceptorAdapter
 	
 	*/
 	
+	public GlobeeInterceptor(WebRequestInterceptor requestInterceptor) {
+		super(requestInterceptor);
+		// TODO Auto-generated constructor stub
+	}
+
 	// 기존
 	private static List<String> noauthUrls;
 	{

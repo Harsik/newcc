@@ -41,7 +41,7 @@ public class AjaxController extends GlobeeController
 		     temp.put(key.toUpperCase(), value);
 		   }
 
-		   origin = null;Q
+		   origin = null;
 		  return temp;
 	}
 	*/

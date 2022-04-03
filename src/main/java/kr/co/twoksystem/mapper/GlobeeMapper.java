@@ -4,13 +4,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.egovframe.rte.psl.dataaccess.EgovAbstractDAO;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
 @Repository("globeeMapper")
-public class GlobeeMapper implements IGlobeeMapper
+public class GlobeeMapper extends EgovAbstractDAO implements IGlobeeMapper 
 {
 	private Logger logger = LoggerFactory.getLogger(getClass());
 	private SqlSessionTemplate mSqlSession = null;

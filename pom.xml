@@ -23,6 +23,7 @@
     </parent>
 
 	<properties>
+		<springframework.version>4.0.9.RELEASE</springframework.version>
 	    <spring.maven.artifact.version>5.3.6</spring.maven.artifact.version>
 		<org.egovframe.rte.version>4.0.0</org.egovframe.rte.version>
 		<jackson-mapper-asl.version>1.9.13</jackson-mapper-asl.version>
@@ -71,6 +72,18 @@
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
 
+<!-- 		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${springframework.version}</version>
+		</dependency> -->
+		
 		<!-- 표준프레임워크 실행환경 -->
         <dependency>
 		    <groupId>org.egovframe.rte</groupId>

@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ImportResource;
 @SpringBootApplication
 @ImportResource({"classpath:/egovframework/springmvc/dispatcher-servlet.xml","classpath*:/egovframework/spring/context-*.xml"})
 @Import(EgovBootInitialization.class)
-@ComponentScan(basePackages="egovframework.example")
+@ComponentScan(basePackages={"egovframework.com", "kr.co.twoksystem"})
 public class EgovBootApplication {
 
 	public static void main(String[] args) {
